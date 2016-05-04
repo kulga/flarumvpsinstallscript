@@ -190,4 +190,3 @@ echo 'Flarum username -> flarum_database'
 echo 'Flarum database -> flarum_database'
 echo 'Flarum database password ->' "$generated_mysql_pass"
 unset mysql_pass generated_mysql_pass
-~                                                                                                                                                                                                                
