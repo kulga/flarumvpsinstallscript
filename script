@@ -56,9 +56,9 @@ composer create-project flarum/flarum "$flarum_install" --stability=beta
 
 # Change group and permissions
 chmod 775 "$flarum_install"
-chmod -R 775 "$flarum_install/assets" "$flarum_install/extensions" "$flarum_install/storage"
-chgrp "$webuser_group" "$flarum_install"
-chgrp -R "$webuser_group" "$flarum_install/assets" "$flarum_install/extensions" "$flarum_install/storage"
+chmod -R 775 "$flarum_install/assets" "$flarum_install/storage"
+sudo chgrp "$webuser_group" "$flarum_install"
+sudo chgrp -R "$webuser_group" "$flarum_install/assets" "$flarum_install/extensions" "$flarum_install/storage"
 
 ### Write php5-fpm pool config
 echo writing php5-fpm config
