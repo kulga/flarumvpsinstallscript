@@ -7,7 +7,7 @@ sudo gpasswd -a $USER www-data
 
 # Add repo and key for php5.6
 # Support for Debian 7.10 and Ubuntu 14.04
-if [ "$OS_version" == "Debian GNU/Linux 7.10 (wheezy)" ]
+if [ "$OS_version" == "Debian GNU/Linux 7.11 (wheezy)" ]
   then
     grep -R dotdeb /etc/apt/sources.list /etc/apt/sources.list.d/* &> /dev/null
     if [ $? != 0 ];
