@@ -35,7 +35,7 @@ echo 'Updating...'
 sudo apt-get update 1> /dev/null
 
 # Install packages
-for package in nginx mysql-server mysql-client php5-curl php5-gd php5-mysql php5-fpm pwgen git
+for package in nginx mysql-server mysql-client php5-curl php5-gd php5-cli php5-mysql php5-fpm pwgen git
   do
     dpkg -s "$package" &> /dev/null || packages="$packages $package"
 done
