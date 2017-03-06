@@ -22,7 +22,7 @@ EOF
     fi
 elif [ "$OS_version" == "Ubuntu 14.04.4 LTS" ]
   then
-    sudo add-apt-repository ppa:ondrej/php5-5.6
+    sudo add-apt-repository ppa:ondrej/php
 #else
    # echo "No valid version detected"
    # echo "Press Enter if sure php version is valid
